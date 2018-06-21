@@ -237,11 +237,9 @@ _Correct: `@JvmStatic` annotation_
 
 
 ```kotlin
-class KotlinClass {
-    companion object {
-        @JvmStatic fun doWork() {
+object KotlinClass {
+    @JvmStatic fun doWork(args: Array<String>) {
             /* … */
-        }
     }
 }
 ```
